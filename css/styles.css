@@ -101,6 +101,8 @@ body {
 }
 
 .hero-button {
+  cursor: pointer;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -147,6 +149,8 @@ body {
 /* portfolio styles */
 
 .portfolio-filter-button {
+  cursor: pointer;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
