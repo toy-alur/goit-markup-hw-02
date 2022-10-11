@@ -111,6 +111,12 @@ body {
   border-radius: 4px;
 }
 
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  background: inherit;
+}
+
 .benefits-title {
   font-weight: 700;
   color: var(--second-color);
