@@ -6,10 +6,10 @@
   --main-color: #757575;
   --second-color: #212121;
   --accent-color: #2196f3;
-  --foreground-color: #ffffff;
   --foreground-second-color: rgba(255, 255, 255, 0.6);
-  --background-color: #2f303a;
-  --button-background-color: #f5f4fa;
+  --background-color: #ffffff;
+  --background-second-color: #2f303a;
+  --background-third-color: #f5f4fa;
 }
 body {
   font-family: var(--main-font);
@@ -17,6 +17,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  background: var(--background-color);
 }
 
 .list {
@@ -87,11 +88,11 @@ body {
 }
 
 .hero {
-  background: var(--background-color);
+  background: var(--background-second-color);
 }
 
 .hero-title {
-  color: var(--foreground-color);
+  color: var(--background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -106,7 +107,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--foreground-color);
+  color: var(--background-color);
   letter-spacing: 0.06em;
 
   background: var(--accent-color);
@@ -117,11 +118,13 @@ body {
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-  background: inherit;
+  color: var(--background-second-color);
+  background: var(--background-color);
 }
 
 .benefits-title {
   font-weight: 700;
+  font-size: 14px;
   color: var(--second-color);
 
   text-transform: uppercase;
@@ -133,6 +136,14 @@ body {
   font-size: 36px;
   line-height: 1.17;
   color: var(--second-color);
+}
+
+.team {
+  background: var(--background-third-color);
+}
+
+.team-member-item {
+  background: var(--background-color);
 }
 
 .team-member-name {
@@ -157,22 +168,20 @@ body {
   line-height: 1.62;
   color: var(--second-color);
 
-  background: var(--button-background-color);
+  background: var(--background-third-color);
   border-radius: 4px;
   border: none;
 }
 
+.portfolio-filter-button:hover,
 .portfolio-filter-button:focus,
 .portfolio-filter-button:active {
-  color: var(--foreground-color);
+  color: var(--background-color);
 
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-filter-button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .portfolio-title {
@@ -191,12 +200,12 @@ body {
 /* footer styles */
 
 .footer-section {
-  background: var(--background-color);
+  background: var(--background-second-color);
 }
 
 .footer-logo.link {
   font-family: var(--second-font);
-  color: var(--foreground-color);
+  color: var(--background-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.92;
@@ -207,7 +216,7 @@ body {
 }
 
 .footer-postal.link {
-  color: var(--foreground-color);
+  color: var(--background-color);
 }
 
 .footer-contacts.link {
