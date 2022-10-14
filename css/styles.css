@@ -6,6 +6,7 @@
   --main-color: #757575;
   --second-color: #212121;
   --accent-color: #2196f3;
+  --accent-second-color: #188ce8;
   --foreground-second-color: rgba(255, 255, 255, 0.6);
   --background-color: #ffffff;
   --background-second-color: #2f303a;
@@ -118,8 +119,7 @@ body {
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-  color: var(--background-second-color);
-  background: var(--background-color);
+  background: var(--accent-second-color);
 }
 
 .benefits-title {
@@ -171,7 +171,6 @@ body {
   background: var(--background-third-color);
   border-radius: 4px;
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-filter-button:hover,
